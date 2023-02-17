@@ -16,29 +16,26 @@
 
 body {
     background-color: var(--light-gray);
-    justify-content: center;
+    min-height: 100vh;
+    display: flex;
     align-items: center;
-    display: block;
-    height: 100vh;
+    justify-content: center;
 }
 
 .card {
     width: 1440px;
-    overflow: hidden;
-    text-align: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
     
 .card-center {
-    width: 20%;
+    max-width: 20rem;
     background-color: var(--white);
     padding: 1.25rem;
     border-radius: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    text-align: center;
+    align-items: center;
 }
 
 .card-center img {
@@ -47,9 +44,9 @@ body {
     display: block;
 }
 
-.card-center h2 {
+.card-center h1 {
     color: var(--dark-blue);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 1.25rem;
 }
 
@@ -58,6 +55,7 @@ body {
     color: var(--grayish-blue);
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .attribution {
@@ -86,22 +84,20 @@ footer.attribution {
         flex-direction: column;
     }
 
-    .card img {
-        width: 100%;
-    }
-
     .card-center {
         width: 70%;
         text-align: center;
     }
 
-    .card-center h2 {
+    .card-center h1 {
+        font-size: 1.3rem;
         margin-top: 0.75rem;
         padding: 0.25rem;
     }
 
     .card-center p {
         margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
         padding: 0.25rem;
     }
 }
